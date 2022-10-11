@@ -1,12 +1,55 @@
-/*
-Color Palette: https://colorhunt.co/palette/fdeedcffd8a9f1a661e38b29
-background color: #FDEEDC
-font color: #E38B29
-secondary color: #F1A661
-tertiary color: #FFD8A9
-*/
+header {
+    margin: 4px;
+    letter-spacing: 8px;
+    text-align:center;
+    border-bottom: 1px solid #D0B8A8;
+    border-right: 1px solid #D0B8A8;
+    border-left: 1px solid #D0B8A8;
+    padding: 5px;
+    font-size: 1.1rem;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+}
 
-h3 {
-    color: #E38B29;
-    text-align: center;
+p {
+    font-size: 12px;
+}
+
+.imageCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 40px;
+    border-radius: 30px;
+}
+
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+}
+
+.imageCard a {
+    text-decoration: none;
+    color: #D0B8A8;
+}
+
+@media(min-width: 768px) {
+    header {
+        font-size: 16px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+
+    .imageCard {
+        max-width: 28%;
+    }
 }
