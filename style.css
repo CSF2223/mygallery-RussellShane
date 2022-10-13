@@ -1,14 +1,38 @@
+/* 
+- change font type
+- add more gap between the text and the image
+- 
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html {
+    font-size: 62.5%;
+    
+}
 header {
     margin: 4px;
     letter-spacing: 8px;
     text-align:center;
-    border-bottom: 1px solid #D0B8A8;
-    border-right: 1px solid #D0B8A8;
-    border-left: 1px solid #D0B8A8;
+    border-bottom: 1px solid #826f66;
+    border-right: 1px solid #826f66;
+    border-left: 1px solid #826f66;
     padding: 5px;
     font-size: 1.1rem;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
+}
+body {
+    background-color:#FFD8A9;
+    color: #E38B29;
+    font-family:'Open Sans', sans-serif;
+    margin: 0;
+}
+
+cite {
+    font-size: 30px;
+    font-style: oblique;
 }
 
 p {
@@ -24,6 +48,7 @@ p {
     border-radius: 30px;
 }
 
+
 .imageCard img {
     width: 100%;
     height: auto;
@@ -31,11 +56,20 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
 }
 
+
 .imageCard a {
     text-decoration: none;
-    color: #D0B8A8;
+    color: #FFD8A9;
 }
-
+.cardText {
+    color:#E38B29;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+}
+ 
 @media(min-width: 768px) {
     header {
         font-size: 16px;
@@ -50,6 +84,7 @@ p {
     }
 
     .imageCard {
-        max-width: 28%;
+        max-width: 27%;
     }
 }
+
